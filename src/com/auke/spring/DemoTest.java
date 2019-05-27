@@ -12,11 +12,17 @@ import javax.annotation.Resource;
  * @author Administrator
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:spring-config.xml")
+@ContextConfiguration("classpath:spring-config2.xml")
 public class DemoTest {
 
-    // 测试业务类
-    @Resource(name = "accountService")
+//    // 测试业务类
+//    @Resource(name = "accountService")
+//    private AccountService accountService;
+
+    /**
+     * 注入代理类：因为代理类有增强的操作
+     */
+    @Resource(name = "accountServiceProxy")
     private AccountService accountService;
 
     @Test

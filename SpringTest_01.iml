@@ -29,5 +29,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-5.1.46" level="project" />
+    <orderEntry type="library" name="spring-aop-3.2.0.RELEASE" level="project" />
   </component>
 </module>
